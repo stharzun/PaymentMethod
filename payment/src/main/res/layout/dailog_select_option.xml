@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/payment_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/pay_via"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/payment_dialog_payment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_dialog_text" />
+
+    <LinearLayout
+        android:id="@+id/payment_dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/payment_dialog_payment_list"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/payment_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_dialog_divider"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
